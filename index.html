@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callstack</title>
+    <style>
+      #btn-push {
+        background-color: bisque;
+        position: relative;
+        top: 50px;
+      }
+      #btn-pop {
+        background-color: rgb(122, 204, 41);
+        position: relative;
+        top: 50px;
+      }
+      .callstack {
+        height: 18em;
+        width: 10em;
+        background-color: aqua;
+        position: relative;
+        top: 145px;
+        z-index: -1;
+      }
+      .Box {
+        display: flex;
+        justify-content: center;
+        height: 2em;
+        width: 2em;
+        background-color: rgb(228, 202, 202);
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <button id="btn-push" onclick="pushElement()">PUSH</button>
+      <button id="btn-pop" onclick="popElement()">POP</button>
+      <div class="callstack"></div>
+      <div id="boxes"></div>
+    </center>
+    <script src="./index.js"></script>
+  </body>
+</html>
